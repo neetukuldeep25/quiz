@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Quiz Game</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      background: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    #container {
+      width: 400px;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px gray;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      background: #ddd;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .btn:hover {
+      background: #ccc;
+    }
+
+    #nextBtn {
+      display: none;
+      background: #007bff;
+      color: white;
+    }
+
+    #restartBtn {
+      display: none;
+      background: green;
+      color: white;
+    }
+
+    .correct {
+      background: green !important;
+      color: white;
+    }
+
+    .wrong {
+      background: red !important;
+      color: white;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div id="container">
+
+    <h2 id="question">
+
+    </h2>
+
+    <div id="answer-buttons">
+
+    </div>
+
+    <button id="nextBtn">Next</button>
+
+    <button id="restartBtn">Restart Quiz</button>
+
+  </div>
+
+  
+  <script src="node.js"></script>
+  <script src="index.js"></script>
+
+</body>
+
+</html>
